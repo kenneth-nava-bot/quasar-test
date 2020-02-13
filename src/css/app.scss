@@ -1,0 +1,53 @@
+// app global css in SCSS form
+@import url('https://fonts.googleapis.com/css?family=Lato|Quicksand&display=swap');
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.q-field--error .q-icon {
+  color: $negative
+}
+
+.q-card {
+  border-top: solid 5px;
+  border-color: $primary;
+}
+
+.q-btn__content {
+  font-size: 12px;
+}
+
+.q-btn__content .q-icon {
+  font-size: 1rem;
+}
+
+.text-title {
+  color: $primary;
+}
+
+.text-caption {
+  color: $grey-8;
+}
+
+.q-header {
+  background-color: $secondary !important;
+}
+
+aside.q-drawer,
+.q-drawer__content,
+aside.q-drawer .q-drawer__content .q-list {
+  background-color: $primary;
+  color: $accent;
+}
+
+.q-item__label--header {
+  color: $accent;
+}
+
+aside .text-caption {
+  color: #ffe4bf;
+}
