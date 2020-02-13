@@ -16,6 +16,16 @@ const routes = [
     meta: {
       requiresAuth: true
     }
+  },
+  {
+    path: '/users',
+    component: () => import('layouts/DashboardLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/users/UsersPage.vue') }
+    ],
+    meta: {
+      requiresAuth: true
+    }
   }
 ]
 

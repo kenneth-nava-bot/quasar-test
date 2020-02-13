@@ -7,7 +7,7 @@
   <loading-screen-component v-if="isLoading">{{loadingMessage}}</loading-screen-component>
 
   <q-layout v-else view="lHh Lpr lFf">
-    <q-header elevated>
+    <q-header elevated class="bg-grey-4 text-dark">
       <q-toolbar>
         <q-btn
           flat
@@ -78,6 +78,18 @@
             <q-item-label caption>@quasarframework</q-item-label>
           </q-item-section>
         </q-item>
+        <q-separator color="accent" inset />
+        <q-item-label header>SETTINGS</q-item-label>
+        <q-item clickable tag="a" to="/users">
+          <q-item-section avatar>
+            <q-icon name="group" />
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>Users</q-item-label>
+            <q-item-label caption>Manage application users</q-item-label>
+          </q-item-section>
+        </q-item>
+        <q-separator color="accent" inset />
         <q-item clickable tag="a" @click="logout">
           <q-item-section avatar>
             <q-icon name="logout" />
