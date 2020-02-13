@@ -78,7 +78,7 @@
             <q-item-label caption>@quasarframework</q-item-label>
           </q-item-section>
         </q-item>
-        <q-separator color="accent" inset />
+        <q-separator color="accent" class="q-my-sm" inset />
         <q-item-label header>SETTINGS</q-item-label>
         <q-item clickable tag="a" to="/users">
           <q-item-section avatar>
@@ -89,7 +89,7 @@
             <q-item-label caption>Manage application users</q-item-label>
           </q-item-section>
         </q-item>
-        <q-separator color="accent" inset />
+        <q-separator color="accent" class="q-my-sm" inset />
         <q-item clickable tag="a" @click="logout">
           <q-item-section avatar>
             <q-icon name="logout" />

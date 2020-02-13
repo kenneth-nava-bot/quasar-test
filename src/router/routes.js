@@ -21,7 +21,8 @@ const routes = [
     path: '/users',
     component: () => import('layouts/DashboardLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/users/UsersPage.vue') }
+      { path: '', component: () => import('pages/users/UsersPage.vue') },
+      { path: 'create', component: () => import('pages/users/UsersFormPage.vue') }
     ],
     meta: {
       requiresAuth: true

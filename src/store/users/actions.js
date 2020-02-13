@@ -5,9 +5,11 @@ export async function index (context) {
     try {
       Api.get('/users').then((response) => {
         context.commit('setUsers', response.data)
+        resolve()
       })
     } catch (error) {
-
+      console.log(error)
+      reject()
     }
   })
 }
