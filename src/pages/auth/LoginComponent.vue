@@ -1,8 +1,8 @@
 <template>
   <q-form ref="loginForm"  @submit="login">
-    <q-card-section class="q-mb-md">
-      <div class="text-h5 text-title q-mt-sm q-mb-xs">Dashboard</div>
-      <div class="text-caption q-mb-sm">Welcome to HRIS Dashboard!</div>
+    <q-card-section>
+      <div class="text-h5 text-title q-mt-sm q-mb-xs"><span class="text-bold">HRIS</span> Dashboard</div>
+      <div class="text-caption q-mb-sm">Log in with your account.</div>
         <q-input @input="resetValidation" :disable="isLoading" v-model="username" label="Username" :error="errors.hasOwnProperty('username')">
           <template v-slot:prepend>
               <q-icon name="person"></q-icon>
@@ -20,9 +20,9 @@
           </template>
         </q-input>
     </q-card-section>
-    <q-card-actions align="between">
+    <q-card-actions align="between" class="q-mb-md">
       <q-btn type="reset" :disable="isLoading" flat color="primary" @click="$emit('changePanel', 'forgot-pass')" label="Forgot Password" />
-      <q-btn type="submit" :loading="isLoading" :disable="isLoading" color="primary" icon-right="vpn_key" label="Login" @click="login" />
+      <q-btn type="submit" :loading="isLoading" :disable="isLoading" color="primary" label="Login" @click="login" class="q-px-sm" />
     </q-card-actions>
   </q-form>
 </template>

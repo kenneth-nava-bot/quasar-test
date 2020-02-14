@@ -69,13 +69,13 @@
             <q-item-label caption>forum.quasar.dev</q-item-label>
           </q-item-section>
         </q-item>
-        <q-item clickable tag="a" target="_blank" href="https://twitter.quasar.dev">
+        <q-item clickable tag="a" to="/messenger">
           <q-item-section avatar>
-            <q-icon name="rss_feed" />
+            <q-icon name="chat" />
           </q-item-section>
           <q-item-section>
-            <q-item-label>Twitter</q-item-label>
-            <q-item-label caption>@quasarframework</q-item-label>
+            <q-item-label>Messenger</q-item-label>
+            <q-item-label caption>Manage messenger conversations</q-item-label>
           </q-item-section>
         </q-item>
         <q-separator color="accent" class="q-my-sm" inset />

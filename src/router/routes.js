@@ -27,6 +27,16 @@ const routes = [
     meta: {
       requiresAuth: true
     }
+  },
+  {
+    path: '/messenger',
+    component: () => import('layouts/DashboardLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/messenger.vue') }
+    ],
+    meta: {
+      requiresAuth: true
+    }
   }
 ]
 
